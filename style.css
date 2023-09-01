@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+
 body {
     margin: 0;
     display: flex;
@@ -9,9 +11,9 @@ body {
     color: rgb(1, 1, 1);
     transition: background-color .5s ease;
     position: relative;
-    background: 
+    background:
         radial-gradient(circle at 3% 3%, rgba(255, 255, 255, 0.1) 1px, transparent 2px),
-        linear-gradient(90deg, rgba(203, 19, 19, 0.8), rgba(255, 0, 0, 0.4), rgba(120, 77, 77, 0.8));
+        linear-gradient(90deg, rgba(203, 19, 19, 0.8), rgba(255, 0, 0, 0.4), rgba(128, 71, 71, 0.8));
     background-size: 4px 4px, cover;
 }
 
@@ -44,6 +46,8 @@ body {
     right: 100px;
     font-size: 32px;
     letter-spacing: 2px;
+    color: white;
+    /* Default text color */
 }
 
 .redirect-links a {
@@ -52,12 +56,12 @@ body {
     margin-right: 20px;
 }
 
-.night-theme .redirect-links a {
+.night-theme .redirect-links {
     color: white;
 }
 
 .header {
-    font-size: 55px;
+    font-size: 60px;
     margin-top: -200px;
     margin-left: 75px;
     margin-right: auto;
@@ -71,6 +75,7 @@ body {
     left: 25px;
     font-size: 32px;
     letter-spacing: 2px;
+    text-decoration: none;
 }
 
 .header .wave-hand {
@@ -102,7 +107,6 @@ form {
     justify-content: center;
     align-items: center
 }
- 
 .input-name,
 .input-email,
 .input-message {
@@ -231,7 +235,5 @@ input:not(:placeholder-shown)+label {
     font-size: 25px;
     position: fixed;
     bottom: 10px;
-    /* Adjust the value to align it with the email photo */
     left: 50px;
 }
-
