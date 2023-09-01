@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,29 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    Contact
+    <div class="sub-form">
+        <form action="https://formsubmit.co/admorri4@ncsu.edu.com" method="POST">
+            <div class="input-name">
+                <input type="text" name="name" required style="font-size: 15px">
+                <label for="name"><font size="5px">Full Name</font></label>
+            </div>
+
+            <div class="input-email">
+                <input type="email" name="email" required style="font-size: 15px">
+                <label for="email">Email</label>
+            </div>
+
+            <div class="input-message">
+                <textarea name="message" required style="font-size: 15px"></textarea>
+                <label for="message">Message</label>
+            </div>
+
+            <button class="button" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
 </body>
+
 </html>

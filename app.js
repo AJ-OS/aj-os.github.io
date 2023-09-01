@@ -7,3 +7,4 @@ document.addEventListener("DOMContentLoaded", () => {
         body.classList.toggle("night-theme");
     });
 });
+
