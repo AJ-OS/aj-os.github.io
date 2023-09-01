@@ -96,7 +96,7 @@ form {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .input-name,
@@ -104,7 +104,7 @@ form {
 .input-message {
     position: relative;
     margin-bottom: 40px;
-    width: 100%;
+    margin-left: -10px;
 }
 
 label {
@@ -116,7 +116,7 @@ label {
     font-size: 25px;
     color: rgb(4, 4, 4);
     margin: 0px;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
     transition: transform 0.2s ease-out, font-size 0.2s ease-out;
 }
 
@@ -134,8 +134,8 @@ input:focus {
     border-color: #007bff;
 }
 
-input:focus + label,
-input:not(:placeholder-shown) + label {
+input:focus+label,
+input:not(:placeholder-shown)+label {
     transform: translateY(-16px);
     font-size: 25px;
     background-color: rgba(255, 255, 255, 0);
@@ -143,57 +143,69 @@ input:not(:placeholder-shown) + label {
 }
 
 .button {
-  align-items: center;
-  background-color: #0A66C2;
-  border: 0;
-  border-radius: 100px;
-  box-sizing: border-box;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 20px;
-  max-width: 480px;
-  min-height: 40px;
-  min-width: 0px;
-  overflow: hidden;
-  padding: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  touch-action: manipulation;
-  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
 }
 
 .button:hover,
-.button:focus { 
-  background-color: #16437E;
-  color: #ffffff;
+.button:focus {
+    background-color: #16437E;
+    color: #ffffff;
 }
 
 .button:active {
-  background: #09223b;
-  color: rgb(255, 255, 255, .7);
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
 }
 
-.button:disabled { 
-  cursor: not-allowed;
-  background: rgba(0, 0, 0, .08);
-  color: rgba(0, 0, 0, .3);
+.button:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
 }
 
 .socials {
-    align-items: baseline;
     position: fixed;
-    bottom: 0;
-    left: -50;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+.socials a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.socials img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 
 .input-message textarea {
     width: 100%;
@@ -203,4 +215,12 @@ input:not(:placeholder-shown) + label {
     font-size: 15px;
     transition: border-color 0.2s ease-out;
     resize: vertical;
+}
+
+.email-text {
+    font-size: 25px;
+    position: fixed;
+    bottom: 10px;
+    /* Adjust the value to align it with the email photo */
+    left: 50px;
 }
