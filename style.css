@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     height: 100vh;
     background-color: #f0f0f0;
-    color: #333;
+    color: rgb(1, 1, 1);
     transition: background-color .5s ease;
     position: relative;
     background: 
@@ -102,13 +102,19 @@ form {
     justify-content: center;
     align-items: center
 }
-
+ 
 .input-name,
 .input-email,
 .input-message {
     position: relative;
-    margin-bottom: 40px;
-    margin-left: -10px;
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.input-message label {
+    background-color: transparent;
+    margin-left: 50px;
+    margin-top: -20px;
 }
 
 label {
@@ -124,11 +130,12 @@ label {
     transition: transform 0.2s ease-out, font-size 0.2s ease-out;
 }
 
+
 input {
     width: 100%;
     padding: 10px;
     border: 1px solid rgb(128, 128, 128);
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 15px;
     transition: border-color 0.2s ease-out;
 }
@@ -172,7 +179,8 @@ input:not(:placeholder-shown)+label {
     transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     user-select: none;
     -webkit-user-select: none;
-    vertical-align: middle;
+    margin: 0 auto;
+    display: block;
 }
 
 .button:hover,
@@ -205,9 +213,7 @@ input:not(:placeholder-shown)+label {
 }
 
 .socials img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    border-radius: 75%;
 }
 
 
@@ -215,7 +221,7 @@ input:not(:placeholder-shown)+label {
     width: 100%;
     padding: 10px;
     border: 1px solid rgb(128, 128, 128);
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 15px;
     transition: border-color 0.2s ease-out;
     resize: vertical;
