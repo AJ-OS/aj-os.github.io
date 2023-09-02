@@ -87,7 +87,7 @@ body {
     left: 25px;
     font-size: 32px;
     letter-spacing: 2px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .header .wave-hand {
