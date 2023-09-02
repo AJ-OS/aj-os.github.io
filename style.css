@@ -352,8 +352,8 @@ input:not(:placeholder-shown)+label {
 
 
 .profile-pic {
-    border-radius: 50%;
-    width: 325px;
+    border-radius: 30%;
+    width: 250px;
     height: 300px;
     display: block;
     margin: 0 auto;
