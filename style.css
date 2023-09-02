@@ -56,6 +56,18 @@ body {
     margin-right: 20px;
 }
 
+.redirect-links :hover {
+    text-decoration: underline;
+}
+
+.link-container {
+    text-decoration: none;
+}
+
+.aj-task :hover {
+    text-decoration: underline;
+}
+
 .night-theme .redirect-links {
     color: white;
 }
@@ -111,14 +123,24 @@ form {
 .input-email,
 .input-message {
     position: relative;
-    margin-bottom: 55px;
+    margin-bottom: 60px;
     text-align: center;
+}
+
+.input-email label {
+    margin-top: -12px;
+}
+
+.input-name label {
+    background-color: transparent;
+    margin-left: -28px;
+    margin-top: -12px;
 }
 
 .input-message label {
     background-color: transparent;
     margin-left: 50px;
-    margin-top: -20px;
+    margin-top: -22px;
 }
 
 label {
@@ -159,15 +181,15 @@ input:not(:placeholder-shown)+label {
 
 .button {
     align-items: center;
-    background-color: #0A66C2;
+    background-color: #000000;
     border: 0;
     border-radius: 100px;
     box-sizing: border-box;
     color: #ffffff;
     cursor: pointer;
     display: inline-flex;
-    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
     font-weight: 600;
     justify-content: center;
     line-height: 20px;
@@ -185,16 +207,17 @@ input:not(:placeholder-shown)+label {
     -webkit-user-select: none;
     margin: 0 auto;
     display: block;
+    margin-bottom: -20px;
 }
 
 .button:hover,
 .button:focus {
-    background-color: #16437E;
+    background-color: #077cf1;
     color: #ffffff;
 }
 
 .button:active {
-    background: #09223b;
+    background: #077cf1;
     color: rgb(255, 255, 255, .7);
 }
 
@@ -234,6 +257,10 @@ input:not(:placeholder-shown)+label {
 .email-text {
     font-size: 25px;
     position: fixed;
-    bottom: 10px;
     left: 50px;
+}
+
+.container-text {
+    margin: 0 auto;
+    margin-top: 30px;
 }
