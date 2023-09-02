@@ -119,7 +119,6 @@ form {
     justify-content: center;
     align-items: center
 }
-
 .input-name,
 .input-email,
 .input-message {
@@ -241,7 +240,7 @@ input:not(:placeholder-shown)+label {
 }
 
 .socials img {
-    border-radius: 75%;
+    border-radius: 0%;
 }
 
 
