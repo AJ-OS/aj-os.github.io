@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     themeToggle.addEventListener("click", () => {
         console.log("Button Clicked!");
 
-        
+
         body.classList.toggle("night-theme");
 
         if (isNightTheme) {

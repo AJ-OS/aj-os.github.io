@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+
+body {
+    background:
+        radial-gradient(circle at 3% 3%, rgba(255, 255, 255, 0.1) 1px, transparent 2px),
+        linear-gradient(90deg, rgba(203, 19, 19, 0.8), rgba(255, 0, 0, 0.4), rgba(128, 71, 71, 0.8));
+    background-size: 4px 4px, cover;
+}
+
+.header-container {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 38px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.timeline {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 750px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #ffffff;
+}
+
+.timeline__component {
+    margin: 0 20px 20px 20px;
+}
+
+.timeline__component--bg {
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* LEAVE TILL LAST */
+.timeline__component--bottom {
+    margin-bottom: 0;
+}
+
+.timeline__middle {
+    position: relative;
+    background: #ffffff;
+}
+
+.timeline__point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.timeline__point--bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(1200%) translateY(-5%);
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.timeline__date--right {
+    text-align: right;
+}
+
+.timeline__title {
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+.timeline__paragraph {
+    line-height: 1.5;
+}
