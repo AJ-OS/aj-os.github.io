@@ -5,10 +5,12 @@ body {
         radial-gradient(circle at 3% 3%, rgba(255, 255, 255, 0.1) 1px, transparent 2px),
         linear-gradient(90deg, rgba(203, 19, 19, 0.8), rgba(255, 0, 0, 0.4), rgba(128, 71, 71, 0.8));
     background-size: 4px 4px, cover;
+    margin: 0;
+    /* Added to remove default margin */
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 .header-container {
-    font-family: 'Libre Franklin', sans-serif;
     font-size: 38px;
     color: #ffffff;
     text-align: center;
@@ -37,11 +39,6 @@ body {
     border-radius: 10px;
 }
 
-/* LEAVE TILL LAST */
-.timeline__component--bottom {
-    margin-bottom: 0;
-}
-
 .timeline__middle {
     position: relative;
     background: #ffffff;
@@ -62,7 +59,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(1200%) translateY(-5%);
+    transform: translateX(1200%) translateY(-50%);
     width: 15px;
     height: 15px;
     background: #ffffff;
@@ -81,4 +78,9 @@ body {
 
 .timeline__paragraph {
     line-height: 1.5;
+}
+
+.timeline__activity {
+    margin: 0;
+    font-size: 0.9em;
 }
