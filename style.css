@@ -319,7 +319,7 @@ input:not(:placeholder-shown)+label {
 
 .container {
     display: flex;
-    margin: 250px auto;
+    margin: 275px auto;
     justify-content: center;
     height: 100vh;
     width: 75%;
@@ -352,9 +352,9 @@ input:not(:placeholder-shown)+label {
 
 
 .profile-pic {
-    border-radius: 30%;
-    width: 250px;
-    height: 300px;
+    border-radius: 45%;
+    width: 325px;
+    height: 350px;
     display: block;
     margin: 0 auto;
     margin-top: 115px;
@@ -369,4 +369,15 @@ h3 {
     font-size: 40px;
     font-family: 'Libre Franklin', sans-serif;
     color: white;
+}
+
+.return-but {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+.return-but img {
+    width: 70px;
+    height: 70px;
 }
