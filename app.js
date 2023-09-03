@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             themeIcon.src = "/Icons/sun-1.png";
         }
-
-        // Update the theme state
         isNightTheme = !isNightTheme;
     });
 });
