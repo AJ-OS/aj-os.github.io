@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
 
-@media screen and (max-width: 1264px) {
-    .profile-pic {
-        position: fixed;
-        top: 50px;
+/* Error displaying image on large screens */
+@media screen and (max-width: 1265px) {
+    img.profile-pic {
+        margin-top: 165px;
     }
 }
 
