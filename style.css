@@ -16,7 +16,7 @@
     text-align: center;
     margin-top: 250px;
 }
-
+/* Website is not optimized for small screens. Ex: Iphone/Ipad */
 @media only screen and (max-width: 414px) {
     .everything {
         visibility: collapse;
