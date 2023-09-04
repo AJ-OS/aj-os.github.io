@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 642px) {
     .profile-pic {
         margin-top: 165px;
     }
