@@ -7,7 +7,6 @@
     }
 }
 
-
 .error-msg {
     color: white;
     font-size: 50px;
@@ -372,9 +371,8 @@ input:not(:placeholder-shown)+label {
     height: 350px;
     display: block;
     margin: 0 auto;
-    margin-top: 115px;
+    margin-top: -100px;
     position: fixed;
-    top: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
