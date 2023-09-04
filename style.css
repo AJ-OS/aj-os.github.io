@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
 
-@media screen and (max-width: 642px) {
+@media screen and (max-width: 1264px) {
     .profile-pic {
-        margin-top: 165px;
+        position: fixed;
+        top: 50px;
     }
 }
 
@@ -365,13 +366,14 @@ input:not(:placeholder-shown)+label {
 
 
 .profile-pic {
+    display: block;
     border-radius: 50%;
     width: 325px;
     height: 350px;
     display: block;
     margin: 0 auto;
     margin-top: 115px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
