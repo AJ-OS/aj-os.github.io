@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
 
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 10% auto;
+    }
+
+    .box {
+        width: 90%;
+        margin-top: 5vh;
+    }
+
+    .profile-pic {
+        width: 80%;
+    }
+
+    .header-container {
+        font-size: 3vw;
+        margin: 5% auto;
+    }
+}
+
 
 .error-msg {
     color: white;
@@ -326,18 +348,11 @@ input:not(:placeholder-shown)+label {
 
 .box {
     width: 80%;
-    margin-top: -200px;
-    height: 50%;
-    padding: 20px;
-    float: left;
-}
-
-.box {
-    width: 80%;
     margin-top: 40px;
     height: 50%;
     padding: 20px;
     float: left;
+    text-align: center;
 }
 
 .container {
@@ -354,15 +369,6 @@ input:not(:placeholder-shown)+label {
 
 .box.right {
     float: right;
-}
-
-.box {
-    width: 80%;
-    margin-top: 50px;
-    height: 50%;
-    padding: 20px;
-    float: left;
-    text-align: center;
 }
 
 .container {
